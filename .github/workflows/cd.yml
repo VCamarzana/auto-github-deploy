@@ -15,8 +15,8 @@ jobs:
       - name: Use SSH key
         run: |
           mkdir -p ~/.ssh/
-          echo "${{ secrets.SSH_PRIVATE_KEY_CD }}" > ~/.ssh/id_rsa_cd
-          sudo chmod 600 ~/.ssh/id_rsa_cd
+          echo "${{ secrets.SSH_PRIVATE_KEY_CD }}" > ~/.ssh/id_rsa
+          sudo chmod 600 ~/.ssh/id_rsa
 
       - name: Git config
         run: |
